@@ -384,27 +384,27 @@ mod test {
     fn test_extend_or_shorten_widget_width() {
         let mut app = App::new(Config::default());
         assert_eq!(
-            app.extend_or_shorten_widget_width(Key::Char('>')).unwrap(),
+            app.extend_or_shorten_widget_width(Key::Ctrl('>')).unwrap(),
             EventState::Consumed
         );
         assert_eq!(app.left_main_chunk_percentage, 20);
 
         app.left_main_chunk_percentage = 70;
         assert_eq!(
-            app.extend_or_shorten_widget_width(Key::Char('>')).unwrap(),
+            app.extend_or_shorten_widget_width(Key::Ctrl('>')).unwrap(),
             EventState::Consumed
         );
         assert_eq!(app.left_main_chunk_percentage, 70);
 
         assert_eq!(
-            app.extend_or_shorten_widget_width(Key::Char('<')).unwrap(),
+            app.extend_or_shorten_widget_width(Key::Ctrl('<')).unwrap(),
             EventState::Consumed
         );
         assert_eq!(app.left_main_chunk_percentage, 65);
 
         app.left_main_chunk_percentage = 15;
         assert_eq!(
-            app.extend_or_shorten_widget_width(Key::Char('<')).unwrap(),
+            app.extend_or_shorten_widget_width(Key::Ctrl('<')).unwrap(),
             EventState::Consumed
         );
         assert_eq!(app.left_main_chunk_percentage, 15);

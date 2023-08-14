@@ -36,7 +36,10 @@ pub fn scroll(key: &KeyConfig) -> CommandText {
     CommandText::new(
         format!(
             "Scroll up/down/left/right [{},{},{},{}]",
-            key.scroll_up, key.scroll_down, key.scroll_left, key.scroll_right
+            key.scroll_up,
+            key.scroll_down,
+            key.scroll_left,
+            key.scroll_right,
         ),
         CMD_GROUP_GENERAL,
     )
