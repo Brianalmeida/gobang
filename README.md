@@ -1,4 +1,4 @@
-# This a fork of Gobang 
+# This a fork of Gobang 🍴
 
 <div align="center">
 
