@@ -80,6 +80,7 @@ If you already have a Rust environment set up, you can use the `cargo install` c
 cargo install --version 0.1.0-alpha.5 gobang
 ```
 
+
 ### From binaries (Linux, macOS, Windows)
 
 - Download the [latest release binary](https://github.com/TaKO8Ki/gobang/releases) for your system
