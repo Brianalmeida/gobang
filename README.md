@@ -1,3 +1,5 @@
+# This a fork of Gobang 
+
 <div align="center">
 
 ![gobang](./resources/logo.png)
